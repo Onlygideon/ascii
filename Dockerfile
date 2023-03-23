@@ -2,7 +2,7 @@
 # Build stage
 #
 FROM maven:3.9.1-jdk-17 AS build
-COPY
+COPY target/com.api.ascii-1.0.0.jar ascii.jar
 RUN mvn clean package -DskipTests
 
 #
